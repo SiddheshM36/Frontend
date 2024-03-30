@@ -1,0 +1,17 @@
+<p>databinding works!</p>
+<!-- string interpolation -->
+<h1>Welcome Back to angular {{name}}</h1>
+<h1>Welcome Back to angular {{name.toUpperCase()}}</h1>
+
+<!-- property binding => [disabled] -->
+<input type="text" [disabled]="isDisabled">
+<input type="text" [disabled]="false">
+
+<!-- class binding -->
+<h1 *ngIf="isColored" [ngClass]="['myColor']">Css class binding</h1>
+
+<!-- style binding -->
+<h1 [ngStyle]="{'color': name === 'siddhesh' ? 'red' : 'green'}">{{name}}</h1>
+
+<!-- two way binding -->
+<input type="text" [(ngModel)]="inputText" (input)="onChange()">
