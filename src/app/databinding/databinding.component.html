@@ -13,5 +13,19 @@
 <!-- style binding -->
 <h1 [ngStyle]="{'color': name === 'siddhesh' ? 'red' : 'green'}">{{name}}</h1>
 
+
+<!--ngClass directive -->
+<h1 [ngClass]="{'color': name === 'siddhesh' ? 'red' : 'green'}">{{name}}</h1>
+
 <!-- two way binding -->
 <input type="text" [(ngModel)]="inputText" (input)="onChange()">
+
+<!-- Template reference variable -->
+<!-- <input type="text" #nameVar> -->
+<!-- <button (click)="getName(nameVar.value)">sumbit</button><br> -->
+
+<input type="text" (keyup)="getName(nameVar.value)" #nameVar>
+<h2>{{ templateName }}</h2>
+
+
+

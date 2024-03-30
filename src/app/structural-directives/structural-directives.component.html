@@ -1,0 +1,19 @@
+<p>structural-directives works!</p>
+<!-- if else -->
+<div *ngIf="name === 'siddhes'; else demon">
+    <h2>{{ name }}</h2>
+</div>
+
+<ng-template #demon>
+    <h2>this is demon block</h2>
+</ng-template>
+
+<!-- if-then-else -->
+<div *ngIf="name === 'siddhesh'; then ifPart; else elsePart"></div>
+
+<ng-template #ifPart>
+<h2>If part executed</h2>
+</ng-template>
+<ng-template #elsePart>
+<h2>Else part executed</h2>
+</ng-template>
