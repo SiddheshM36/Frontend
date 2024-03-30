@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DatabindingComponent,
-    StructuralDirectivesComponent
+    StructuralDirectivesComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,

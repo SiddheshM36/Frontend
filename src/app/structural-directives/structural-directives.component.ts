@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class StructuralDirectivesComponent {
   name = "siddhesh"
+
+  employee = [
+    {eName : 'sid', company : 'TCS', skills : ['java','springboot','angular']},
+    {eName : 'perry', company : 'IBM', skills : ['node','express','react']},
+    {eName : 'emmy', company : 'Infosys', skills : ['python','AI','BI']},
+
+  ]
 }

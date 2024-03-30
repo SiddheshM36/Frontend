@@ -17,3 +17,21 @@
 <ng-template #elsePart>
 <h2>Else part executed</h2>
 </ng-template>
+
+<!-- ngSwitch -->
+<div [ngSwitch]="name">
+    <h2 *ngSwitchCase="'siddhesh'">siddhesh name is selected</h2>
+    <h2 *ngSwitchCase="'perry'">perry name is selected</h2>
+    <h2 *ngSwitchDefault>no name is selected</h2>
+    
+</div>
+
+<!-- ngFor with nested for loop -->
+<ul *ngFor="let e of employee">
+    {{e.eName}}
+    {{e.company}}
+    <!-- {{e.skills}} -->
+    <li *ngFor="let skill of e.skills">
+        {{skill}}
+    </li>
+</ul>
