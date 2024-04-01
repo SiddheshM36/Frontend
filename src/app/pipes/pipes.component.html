@@ -1,1 +1,9 @@
-<p>pipes works!</p>
+<h1 [ngStyle]="{'background-color' : 'yellow'}">Pipes</h1>
+<h3>{{ name | uppercase }}</h3>
+<h3>{{ name | lowercase }}</h3>
+<h3>{{ name | titlecase }}</h3>
+<h3>{{ name | slice:3 }}</h3>
+<h3>{{ name | slice:3:9 }}</h3>
+
+<h3>{{ student  }}</h3> <!--   [object Object] -->
+<h3>{{ student | json }}</h3> 

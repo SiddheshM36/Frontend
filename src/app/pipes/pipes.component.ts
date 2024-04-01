@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./pipes.component.css']
 })
 export class PipesComponent {
+  name = 'siddhesh mhatre'
 
+  student = {
+    name : 'sid',
+    comp : 'TCS',
+    sal : 1000
+  }
 }

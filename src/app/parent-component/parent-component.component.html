@@ -1,0 +1,5 @@
+<p>parent-component works!</p>
+<app-child-component [parentData]="name"></app-child-component>
+
+<app-child-component (sentData)="onDataReceived($event)"></app-child-component>
+<p>Data received from child: {{ receivedData }}</p>
